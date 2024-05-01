@@ -3,8 +3,7 @@ const { getUser, createUser } = require('../services/userService');
 const fetchUser = async (req, res) => {
   try {
     const data = req.query;
-    const { body } = req;
-    const result = await getUser(data, body);
+    const result = await getUser(data);
     res.status(result.status).json({
       status: result.status,
       message: result.message,

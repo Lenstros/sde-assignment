@@ -36,12 +36,12 @@ async function createUser(data) {
   }
 }
 
-async function getUser(data, body) {
+async function getUser(data) {
   try {
     const {
-      userFirstName, userLastName, userEmail, userPhone, userAddress, userCity,course,
+      userFirstName, userLastName, userEmail, userPhone, userAddress, userCity, course,
       userState, userZip, userCountry, userGender, userDob, userRole, userStatus,
-      page = 1, pageSize = 10
+      page = 1, pageSize = 10,
     } = data;
     let { filters } = data || {};
     const query = {};

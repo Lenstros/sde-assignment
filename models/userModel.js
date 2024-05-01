@@ -1,5 +1,5 @@
 /* eslint-disable no-useless-escape */
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
 // Define the User schema
 const userSchema = new mongoose.Schema(
@@ -39,23 +39,23 @@ const userSchema = new mongoose.Schema(
     userGender: {
       type: String,
       required: true,
-      enum: ["male", "female", "other"],
+      enum: ['male', 'female', 'other'],
     },
     userDob: { type: Date, required: true },
     userStatus: {
       type: String,
-      default: "active",
-      enum: ["active", "inactive", "dormant"],
+      default: 'active',
+      enum: ['active', 'inactive', 'dormant'],
     },
     totalMarks: { type: Number, default: 0 },
     course: { type: String, required: true },
     userCreatedAt: { type: Date, default: Date.now },
     userUpdatedAt: { type: Date, default: Date.now },
   },
-  { collection: "users" }
+  { collection: 'users' },
 );
 
 // Create the User model
-const User = mongoose.model("User", userSchema);
+const User = mongoose.model('User', userSchema);
 
 module.exports = User;
