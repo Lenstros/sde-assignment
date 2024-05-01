@@ -24,6 +24,10 @@ Before you begin, ensure you have the following installed:
    npm install
    ```
 
+3. Setup MongoDB
+    - Create db as test
+    - create a collection called as users
+
 3. Set up your environment variables:
    - Update the `MONGO_URI` variable in the `.env` file with your MongoDB URI.
 
