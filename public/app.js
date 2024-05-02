@@ -29,6 +29,7 @@ const loadPagination = () => {
     const a = document.createElement('a');
     a.className = 'page-link';
     a.innerText = text;
+    (page == pageToSet) && (a.classList.add('active'))
     if (enabled) {
       a.addEventListener('click', () => {
         paginationDetails.page = pageToSet;
