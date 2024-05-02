@@ -1,5 +1,8 @@
 # SDE Home assignment
 
+Check out the live demo [here](https://sde-assignment.onrender.com)
+Note: This is free version on render so when not used for while it turns down, please wait for few seconds the server starup
+
 ## Getting Started with the Node Application
 
 This guide will help you to set up and run the Node.js application on your local machine.

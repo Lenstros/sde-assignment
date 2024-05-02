@@ -17,7 +17,7 @@ const query = {};
 const courses = [];
 let previousCourse = '';
 
-const formatQuery = (query) => Object.keys(query).map((key) => `${key}=${encodeURIComponent(query[key])}`).join('&');
+const formatQuery = (q) => Object.keys(q).map((key) => `${key}=${encodeURIComponent(q[key])}`).join('&');
 
 const loadPagination = () => {
   pagination.innerHTML = '';
@@ -29,7 +29,7 @@ const loadPagination = () => {
     const a = document.createElement('a');
     a.className = 'page-link';
     a.innerText = text;
-    (page == pageToSet) && (a.classList.add('active'))
+    (page == pageToSet) && (a.classList.add('active'));
     if (enabled) {
       a.addEventListener('click', () => {
         paginationDetails.page = pageToSet;
